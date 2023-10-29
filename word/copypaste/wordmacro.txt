@@ -1,0 +1,47 @@
+Dim w
+Dim h
+Dim t
+Dim l
+Dim ct
+Dim cl
+Dim cr
+Dim cb
+
+
+Sub PasteEMF()
+    On Error GoTo Normal
+    Selection.PasteSpecial Link:=False, DataType:=wdPasteEnhancedMetafile, _
+        Placement:=wdInLine, DisplayAsIcon:=False
+    Exit Sub
+Normal:
+    Selection.Paste
+End Sub
+
+Sub copysize()
+    On Error GoTo Finish
+    With Selection.InlineShapes(1)
+    h = .Height
+    w = .Width
+    ct = .PictureFormat.CropTop
+    cl = .PictureFormat.CropLeft
+    cr = .PictureFormat.CropRight
+    cb = .PictureFormat.CropBottom
+    End With
+Finish:
+End Sub
+
+Sub pasteSize()
+   On Error GoTo Finish
+    With Selection.InlineShapes(1)
+        .LockAspectRatio = msoFalse
+        With .PictureFormat
+            .CropTop = ct
+            .CropLeft = cl
+            .CropRight = cr
+            .CropBottom = cb
+        End With
+        .Height = h
+        .Width = w
+    End With
+Finish:
+End Sub
