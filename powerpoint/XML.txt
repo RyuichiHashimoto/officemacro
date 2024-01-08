@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI
+	xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon startFromScratch="false">
+		<tabs>
+			<tab id="MyTab1" label="編集" keytip="ZZ1">
+				<group id="Group2" label="図形挿入">
+					<gallery idMso="ShapesInsertGallery" size="large"/>
+					<gallery idMso="TableInsertGallery" size="large"/>
+					<control idMso="TextBoxInsertHorizontal" label="テキストボックス" size="large" enabled="true"/>
+					<button idMso="EquationInsertNew" size="large"/>
+				</group>
+				<group id="grp16" label="テキスト">
+					<control idMso="Font" size="large" />
+					<comboBox idMso="FontSize" />
+					<gallery idMso="FontColorPicker" visible="true" label="文字色" />
+					<gallery idMso="BulletsGallery" label=" " />
+					<gallery idMso="NumberingGallery" label=" " />
+				</group>
+				<group id="Group3" label="整列">
+					<control idMso="ObjectsAlignTopSmart" enabled="true" keytip="K1"/>
+					<control idMso="ObjectsAlignMiddleVerticalSmart" enabled="true"/>
+					<control idMso="ObjectsAlignBottomSmart" enabled="true"/>
+					<control idMso="ObjectsAlignLeftSmart" enabled="true"/>
+					<control idMso="ObjectsAlignCenterHorizontalSmart" enabled="true"/>
+					<control idMso="ObjectsAlignRightSmart" enabled="true"/>
+					<control idMso="AlignDistributeHorizontally" enabled="true"/>
+					<control idMso="AlignDistributeVertically" enabled="true"/>
+				</group>
+				<group id="Group4" label="マクロ貼り付け">
+					<button id="Button4-1" label="位置・サイズコピー" imageMso="MacroPlay" size="normal" onAction="copypos" />
+					<button id="Button4-2" label="位置・サイズ貼り付け横合わせ" imageMso="MacroPlay" size="normal" onAction="setpos_tate" />
+					<button id="Button4-3" label="位置・サイズ貼り付け縦合わせ" imageMso="MacroPlay" size="normal" onAction="setpos_yoko" />
+					<button id="Button4-4" label="トリミング・サイズコピー" imageMso="MacroPlay" size="normal" onAction="copySize" />
+					<button id="Button4-5" label="トリミング・サイズぺ－スト" imageMso="MacroPlay" size="normal" onAction="pasteSize" />
+				</group>
+				
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
