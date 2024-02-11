@@ -27,12 +27,16 @@
 					<control idMso="AlignDistributeHorizontally" enabled="true"/>
 					<control idMso="AlignDistributeVertically" enabled="true"/>
 				</group>
-				<group id="Group4" label="マクロ貼り付け">
+				<group id="Group4" label="【マクロ】貼り付け">
 					<button id="Button4-1" label="位置・サイズコピー" imageMso="MacroPlay" size="normal" onAction="copypos" />
 					<button id="Button4-2" label="位置・サイズ貼り付け横合わせ" imageMso="MacroPlay" size="normal" onAction="setpos_tate" />
 					<button id="Button4-3" label="位置・サイズ貼り付け縦合わせ" imageMso="MacroPlay" size="normal" onAction="setpos_yoko" />
 					<button id="Button4-4" label="トリミング・サイズコピー" imageMso="MacroPlay" size="normal" onAction="copySize" />
 					<button id="Button4-5" label="トリミング・サイズぺ－スト" imageMso="MacroPlay" size="normal" onAction="pasteSize" />
+				</group>
+				<group id="Group5" label="【マクロ】矢印作成">
+					<button id="Button5-1" label="One To N" imageMso="MacroPlay" size="normal" onAction="arrowOneToN" />
+					<button id="Button5-2" label="Serial" imageMso="MacroPlay" size="normal" onAction="arrowSerial" />
 				</group>
 				
 			</tab>
