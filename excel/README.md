@@ -5,5 +5,5 @@
 ## マクロ一覧
 |番号|ファイル名|マクロ名|概要|ショートカットキー
 |--|--|--|--|--|
-|1|draw_only_outer_border.xlsm|draw_only_outer_border|選択範囲に、一度枠なしにした後に外枠罫線をつける。|F1|
-
+|1|draw_border.xlsm|draw_outer_border|選択範囲に、一度枠なしにした後に外枠罫線をつける。|F1|
+|2|draw_border.xlsm|draw_grid_border|選択範囲に、一度枠なしにした後に格子罫線をつける。|F3|
