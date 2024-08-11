@@ -38,6 +38,10 @@
 					<button id="Button5-1" label="One To N" imageMso="MacroPlay" size="normal" onAction="arrowOneToN" />
 					<button id="Button5-2" label="Serial" imageMso="MacroPlay" size="normal" onAction="arrowSerial" />
 				</group>
+				<group id="Group6" label="【マクロ】サイズ微修正">
+					<button id="Button6-1" label="高さ微修正" imageMso="MacroPlay" size="normal" onAction="reduce_height" />
+					<button id="Button6-2" label="横幅微修正" imageMso="MacroPlay" size="normal" onAction="reduce_width" />
+				</group>
 				
 			</tab>
 		</tabs>
